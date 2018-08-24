@@ -9,7 +9,7 @@ import java.io.InputStreamReader;
  public class ClasseMainTres {
  public static void main(String[] args) throws IOException {
         BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
-   System.out.println("Digite o número de horas trabalhadas por uma pessoa : ");
+        System.out.println("Digite o número de horas trabalhadas por uma pessoa : ");
         String numeroHorasDigitado = br.readLine();
         int numeroHoras = Integer.parseInt(numeroHorasDigitado);
 

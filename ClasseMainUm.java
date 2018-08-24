@@ -9,7 +9,7 @@ import java.io.InputStreamReader;
  public class ClasseMainUm {
  public static void main(String[] args) throws IOException {
         BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
-		        System.out.println("Digite O ano anual do funcionario, para saber o Salario Atual:");
+		System.out.println("Digite O ano anual do funcionario, para saber o Salario Atual:");
         String anoDigitado = br.readLine();
         int anoSalario = Integer.parseInt(anoDigitado);
         System.out.println(salarioAtual(anoSalario)); 

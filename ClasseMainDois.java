@@ -10,13 +10,13 @@ import java.io.InputStreamReader;
  public static void main(String[] args) throws IOException {
         BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
         System.out.println("Digite numeros do Intervalo:");
-              String EntradaNumeros[] = br.readLine().split(" ");
-              int  tamanhoEntradaNumeros = (EntradaNumeros.length);
-                int conjuntoNumero [] = new int[tamanhoEntradaNumeros] ;
-              for(int index = 0;index<EntradaNumeros.length;index++){
-                  conjuntoNumero[index]=Integer.parseInt(EntradaNumeros[index]);
-              }
-              numerosPrimosNoIntervalo(conjuntoNumero);
+        String EntradaNumeros[] = br.readLine().split(" ");
+        int  tamanhoEntradaNumeros = (EntradaNumeros.length);
+        int conjuntoNumero [] = new int[tamanhoEntradaNumeros] ;
+        for(int index = 0;index<EntradaNumeros.length;index++){
+              conjuntoNumero[index]=Integer.parseInt(EntradaNumeros[index]);
+        }
+        numerosPrimosNoIntervalo(conjuntoNumero);
  }
 /*
     2) Elabore um algoritmo para mostrar os números primos existentes em um
@@ -30,11 +30,11 @@ import java.io.InputStreamReader;
     Saída: 2 3 5 7 11 13
 */
   public static void numerosPrimosNoIntervalo(int NumeroDoIntervalo[]){
-			System.out.println("Saída: ");
+      System.out.println("Saída: ");
       for (int numero :NumeroDoIntervalo ){
 	  
 			if(numeroPrimo(numero)){
-			System.out.print(numero+" ");
+			    System.out.print(numero+" ");
 			}
           
           
