@@ -16,7 +16,7 @@ import java.io.InputStreamReader;
         
        System.out.println("Conta : "+duasConta.getNomeCorrentista());
        System.out.println("Conta : "+duasConta.getNumeroConta());
-       duasConta.depósito(500.0);
+       duasConta.depÃ³sito(500.0);
        duasConta.saque(50.0);
        System.out.println("Conta : "+duasConta.getSaldo());
      
@@ -24,10 +24,10 @@ import java.io.InputStreamReader;
 }
 /*
 5) Crie uma classe para implementar uma conta corrente. A classe deve
-possuir os seguintes atributos: número da conta, nome do correntista e
-saldo. Os métodos são os seguintes: alterarNome, depósito e saque; No
-construtor, saldo é opcional, com valor default zero e os demais atributos
-são obrigatórios.
+possuir os seguintes atributos: nÃºmero da conta, nome do correntista e
+saldo. Os mÃ©todos sÃ£o os seguintes: alterarNome, depÃ³sito e saque; No
+construtor, saldo Ã© opcional, com valor default zero e os demais atributos
+sÃ£o obrigatÃ³rios.
 */
 class Conta {
 
@@ -67,9 +67,9 @@ class Conta {
         nomeCorrentista = nomeParaAlterar;
     }
 
-    public void depósito(double deposito) {
+    public void depÃ³sito(double deposito) {
         if (deposito > 0) {
-            saldo += deposito;
+            saldo += deposito; 
         }
     }
 
